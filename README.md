@@ -48,7 +48,7 @@ xcodebuild -create-xcframework -framework iphoneos/QCloudCOSXML.framework -frame
 
 ```shell
 // compute-checksum 
-package compute-checksum /Users/ducongcong/Downloads/SDK/Framework/zip/COSBeaconAPI_Base.xcframework.zip
+swift package compute-checksum /Users/ducongcong/Downloads/SDK/Framework/zip/COSBeaconAPI_Base.xcframework.zip
 
 // 输出 83e910f199d4b640497f8793382cb202cf20a5b04fe4dbe40d7f6c415b910c39  更新到Package.swift当中
 
