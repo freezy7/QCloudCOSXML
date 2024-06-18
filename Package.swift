@@ -12,9 +12,9 @@ let package = Package(
         .library(name: "QCloudCOSXML", targets: ["QCloudCOSXML", "QCloudCore", "COSBeaconAPI_Base", "QimeiSDK"]),
     ],
     targets: [
-        .binaryTarget(name: "QCloudCOSXML", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.0/QCloudCOSXML.xcframework.zip", checksum: "f37f9bddd5c8c7a40cfc10ccad11df01a21116c980df682d31f7e65eb8d7807c"),
-        .binaryTarget(name: "QCloudCore", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.0/QCloudCore.xcframework.zip", checksum: "e1640e82c4c5cd134981936c03fb7caddce14aa5f348f1e8716a7711e7d99abd"),
-        .binaryTarget(name: "COSBeaconAPI_Base", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.0/COSBeaconAPI_Base.xcframework.zip", checksum: "83e910f199d4b640497f8793382cb202cf20a5b04fe4dbe40d7f6c415b910c39"),
-        .binaryTarget(name: "QimeiSDK", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.0/QimeiSDK.xcframework.zip", checksum: "564ce42f25e10bf244ea1229a3b6639f10a04ca5b4313414dec7da4ec45705ef")
+        .binaryTarget(name: "QCloudCOSXML", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.1/QCloudCOSXML.xcframework.zip", checksum: "dc9c8f9e188d3e27a0180003658010c11183e78757cfdb31049c389156a225b9"),
+        .binaryTarget(name: "QCloudCore", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.1/QCloudCore.xcframework.zip", checksum: "0b9802e98f51f3299f5ec3c49baf7c3c105c432a3c5a15f42cd32fcc51a6a45a"),
+        .binaryTarget(name: "COSBeaconAPI_Base", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.1/COSBeaconAPI_Base.xcframework.zip", checksum: "6ee29b91193a47c5f56308e4f30b064f2f545ec944a65200e4f55a5a4aad5649"),
+        .binaryTarget(name: "QimeiSDK", url: "https://github.com/freezy7/QCloudCOSXML/releases/download/6.4.1/QimeiSDK.xcframework.zip", checksum: "c12bac0f307768b05ee6f0f7dc0350f6e19ff43e54d5345f4c1ea163d2b1ac6c")
     ]
 )

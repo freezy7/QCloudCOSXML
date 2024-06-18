@@ -35,6 +35,23 @@ xcodebuild -create-xcframework -framework iphoneos/QCloudCOSXML.framework -frame
 // 处理 QimeiSDK.framework
 ...
 
+// 签名,签名所需的命令
+
+// 搜索指定目录下是否包含_CodeSignature签名目录
+find  -name -type d "_CodeSignature"
+
+
+// 列出本地与代码签名相关的证书
+security find-identity -v -p codesigning
+
+// 对SDK进行签名
+
+codesign --timestamp -v --sign "Your Certificate Name" QCloudCOSXML.xcframework
+
+// 验证签名(可以看到相关签名信息)
+
+codesign -dvvv QCloudCOSXML.xcframework
+
 ```
 
 ### 2.对得到的xcframework进行zip压缩生成
@@ -48,7 +65,7 @@ xcodebuild -create-xcframework -framework iphoneos/QCloudCOSXML.framework -frame
 
 ```shell
 // compute-checksum 
-swift package compute-checksum /Users/ducongcong/Downloads/SDK/Framework/zip/COSBeaconAPI_Base.xcframework.zip
+swift package compute-checksum COSBeaconAPI_Base.xcframework.zip
 
 // 输出 83e910f199d4b640497f8793382cb202cf20a5b04fe4dbe40d7f6c415b910c39  更新到Package.swift当中
 
