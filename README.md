@@ -35,6 +35,14 @@ xcodebuild -create-xcframework -framework iphoneos/QCloudCOSXML.framework -frame
 // 处理 QimeiSDK.framework
 ...
 
+```
+
+Xocde 15.3之后SDK签名验证在使用SPM时有问题，只能将做好的xcframework直接拖入项目中使用
+
+---------
+
+```
+
 // 签名,签名所需的命令
 
 // 搜索指定目录下是否包含_CodeSignature签名目录
